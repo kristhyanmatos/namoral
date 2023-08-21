@@ -1,0 +1,6 @@
+package com.example.namoral
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
