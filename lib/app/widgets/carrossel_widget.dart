@@ -42,19 +42,22 @@ class _CarrosselWidgetState extends State<CarrosselWidget>
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        _frases[indexAtual],
-        style: Theme.of(context)
-            .textTheme
-            .displaySmall
-            ?.copyWith(fontWeight: FontWeight.w300, fontSize: 22),
-      )
-          .animate(controller: controller)
-          .fadeIn(duration: const Duration(seconds: 1))
-          .moveY()
-          .fadeOut(delay: const Duration(milliseconds: 1500))
-          .moveY(),
+    return SizedBox(
+      height: 50,
+      child: Center(
+        child: Text(
+          _frases[indexAtual],
+          style: Theme.of(context)
+              .textTheme
+              .displaySmall
+              ?.copyWith(fontWeight: FontWeight.w300, fontSize: 22),
+        )
+            .animate(controller: controller)
+            .fadeIn(duration: const Duration(seconds: 1))
+            .moveY()
+            .fadeOut(delay: const Duration(milliseconds: 1500))
+            .moveY(),
+      ),
     );
   }
 }

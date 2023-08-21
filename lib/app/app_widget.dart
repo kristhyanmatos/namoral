@@ -9,7 +9,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp.router(
       title: "Namoral",
       routeInformationParser: Modular.routeInformationParser,
-      theme: ThemeData(colorSchemeSeed: Colors.teal, useMaterial3: true),
+      theme: ThemeData(colorSchemeSeed: Colors.amber, useMaterial3: true),
       routerDelegate: Modular.routerDelegate,
     );
   }
